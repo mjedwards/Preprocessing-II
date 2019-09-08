@@ -1,1 +1,33 @@
 // Navigation Styles here
+.header-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px auto;
+
+    @media @mobile {
+        flex-direction: column;
+      }
+
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        @media @mobile {
+            justify-content: space-between;
+          }
+
+        a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 1.6rem;
+
+            @media @mobile {
+                margin: 0 10px;
+            }
+        }
+    }
+}
